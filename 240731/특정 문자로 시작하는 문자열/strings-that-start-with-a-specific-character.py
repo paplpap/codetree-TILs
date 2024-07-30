@@ -6,7 +6,7 @@ for i in range(n+1):
 
 cnt = 0
 result = 0
-for j in range(n-1):
+for j in range(n):
     if arr[-1] == arr[j][0]:
         cnt += 1
         result += len(arr[j])
