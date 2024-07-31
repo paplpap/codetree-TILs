@@ -4,9 +4,9 @@ cnt = []
 while True:
     a,n = divmod(a,b)
     
-    cnt.append(n)
 
-    if a == 0:
+    cnt.append(n)
+    if a <= 1:
         break
     
 
