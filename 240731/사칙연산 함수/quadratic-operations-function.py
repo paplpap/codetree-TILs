@@ -10,6 +10,6 @@ elif o == '-':
 elif o == '*':
     print(n,'=',a*c)
 elif o == '/':
-    print(n,'=',a/c)
+    print(n,'=',int(a/c))
 else:
     print('False')
