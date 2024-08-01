@@ -16,8 +16,8 @@ name_arr = []
 for i in range(n):
     name_arr.append(arr[i].name)
 
-name_arr.sort()
-name = name_arr[-1]
+fake_arr = sorted(name_arr)
+name = fake_arr[-1]
 aaa = arr[name_arr.index(name)]
 
 print('name',aaa.name)
