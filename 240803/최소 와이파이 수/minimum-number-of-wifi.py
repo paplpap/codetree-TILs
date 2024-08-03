@@ -14,11 +14,15 @@ elif m >= n:
     else:
         print(0)
 else:
-    for i in range(m,n-m+1,2*m+1):
+    aaa = 0
+    for i in range(m,n,2*m+1):
+        aaa = i+m
         for j in range(i-m,i+m+1):
-        
             if arr[j] == 1:
                 cnt += 1
+                
                 break
-
-    print(cnt)
+    if 1 in arr[aaa:]:
+        print(cnt + 1)
+    else:
+        print(cnt)
