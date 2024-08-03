@@ -8,7 +8,7 @@ if m == 0:
         if arr[i] == 1:
             cnt += 1
     print(cnt)
-elif m > n:
+elif m >= n:
     if 1 in arr:
         print(1)
     else:
