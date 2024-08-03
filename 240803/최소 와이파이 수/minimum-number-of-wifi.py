@@ -22,7 +22,11 @@ else:
                 cnt += 1
                 
                 break
-    if 1 in arr[aaa:]:
-        print(cnt + 1)
+    
+    if aaa < n-1:        
+        if 1 in arr[aaa:]:
+            print(cnt + 1)
+        else:
+            print(cnt)
     else:
         print(cnt)
