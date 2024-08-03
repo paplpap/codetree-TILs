@@ -5,11 +5,14 @@ cnt = 0
 
 if m == 0:
     for i in range(n):
-
         if arr[i] == 1:
-            
             cnt += 1
-    print(cnt)    
+    print(cnt)
+elif m > n:
+    if 1 in arr:
+        print(1)
+    else:
+        print(0)
 else:
     for i in range(m,n-m+1,2*m+1):
         for j in range(i-m,i+m+1):
