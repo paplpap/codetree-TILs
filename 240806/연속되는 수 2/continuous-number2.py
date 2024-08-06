@@ -14,5 +14,6 @@ for i in range(n):
     else:
         cnt += 1
     
+maxc = max(cnt,maxc)
 
 print(maxc)
