@@ -9,23 +9,12 @@ for i in range(n):
     a, b = input().split()
     a = int(a)
 
+
     if now == b:
         if b == 'R':
             black -= 1
         else:
             white -= 1
-
-
-    if now == a:
-        if b == 'R':
-            black -= 1
-        else:
-            white -= 1
-
-    if b == 'R':
-        black += a
-        white -= a
-
 
     if b == 'R':
         black += a
