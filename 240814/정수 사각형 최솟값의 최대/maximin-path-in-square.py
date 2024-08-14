@@ -10,18 +10,23 @@ for i in range(n):
     dp.append([0]*n)
 
 
-def init():
+
+def initialize():
+    # 시작점의 경우 dp[0][0] = num[0][0]으로 초기값을 설정해줍니다
+
+    dp[0][0] = arr[0][0]
     
-    for i in range(n):
+    # 최좌측 열의 초기값을 설정해줍니다.
+    for i in range(1, n):
+        dp[i][0] = min(dp[i-1][0], arr[i][0])
+    
+    # 최상단 행의 초기값을 설정해줍니다.
+    for j in range(1, n):
+        dp[0][j] = min(dp[0][j-1], arr[0][j])
         
-        dp[0][i] += arr[0][i]
-
-    
-    for i in range(1,n):
-    
-        dp[i][0] += arr[i][0]
-
-init()
+        
+# 초기값 설정
+initialize()
 
 
 for i in range(1,n):
